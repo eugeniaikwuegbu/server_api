@@ -1,7 +1,7 @@
 import { Body, Controller, Post } from '@nestjs/common';
 import { AppService, IServer, IVirtualMachine } from './app.service';
 
-@Controller()
+@Controller('calculate/')
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
