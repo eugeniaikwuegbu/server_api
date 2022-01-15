@@ -1,14 +1,15 @@
-import { Controller, Post, Req } from '@nestjs/common';
-import { AppService } from './app.service';
-
+import { Body, Controller, Post } from '@nestjs/common';
+import { AppService, IServer, IVirtualMachine } from './app.service';
 
 @Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Post()
-  getVMDetails() {
-    // ( server, vm ) = request.body
-    // return this.appService.getVMDetails();
+  calculateServerHardware(@Body() data: {serverType: IServer, vms: IVirtualMachine[]}) {
+    const { serverType, vms } = data;
+
+    return this.appService.calculateServerHardware(serverType, vms);
   }
+
 }
