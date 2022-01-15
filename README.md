@@ -45,16 +45,14 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Documentation
-```
+## Postman Documentation
 
 
-```
+https://github.com/eugeniaikwuegbu
+
 
 ## Server Link
-```
 
-```
 
 ## Test
 
