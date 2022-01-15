@@ -24,12 +24,12 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Server Planner Service
 
 ## Installation
 
 ```bash
-$ npm install
+$ npm or install
 ```
 
 ## Running the app
@@ -45,6 +45,17 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+## Documentation
+```
+
+
+```
+
+## Server Link
+```
+
+```
+
 ## Test
 
 ```bash
@@ -58,16 +69,9 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+- Author - Eugenia Ikwuegbu
+- GitHub - https://github.com/eugeniaikwuegbu
 
-## License
-
-Nest is [MIT licensed](LICENSE).
