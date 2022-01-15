@@ -46,12 +46,12 @@ $ npm run start:prod
 ```
 
 ## Postman Documentation
+https://documenter.getpostman.com/view/15851817/UVXjLcBq
 
+## Mock Server
+https://6f403305-c7ad-4e0c-b7ae-b42a9f3b09e0.mock.pstmn.io
 
-https://github.com/eugeniaikwuegbu
-
-
-## Server Link
+## Hosted API Link
 
 
 ## Test
