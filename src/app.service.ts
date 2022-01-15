@@ -1,37 +1,45 @@
-import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class AppService {
 
-  getVMDetails(serverType:IServer, vm: MachineList ) {
-    try {
-      let sum = vm.map((server) => server.HDD)
-        .reduce((a, b) => a + b, 0);
-      if (sum >= serverType.HDD) {
-        return;
+  calculateServerHardware(serverType: IServer, vms: IVirtualMachine[] ): number {
+    let result = 0;
+
+    for (let vm of vms) {
+      if (vm.CPU < serverType.CPU && vm.HDD < serverType.HDD && vm.RAM < serverType.RAM) {
+        result += 1;
       }
-      return {
-        'message': 'Number of vms the user can use',
-        'number of VMs': serverType.result += 1,
-      };
-    } catch (e) {
-      throw new HttpException('BadRequestException', HttpStatus.BAD_REQUEST)
     }
+
+    return result;
+
+    // try {
+    //   let sum = vm.map((server) => server.HDD)
+    //     .reduce((a, b) => a + b, 0);
+    //   if (sum > serverType.HDD) {
+    //     return {
+    //     "message": "Data Storage Capacity exceeded"
+    //     }
+    //   } else if ( sum === serverType.HDD) {
+    //     return serverType.result+=1;
+    //   }
+    //   return {
+    //     "message": 'Number of Virtual Machines the User can use',
+    //     "number of VMs": serverType.result += 1,
+    //   };
+    // } catch (e) {
+    //   throw new HttpException('BadRequestException', HttpStatus.BAD_REQUEST)
+    // }
   }
 }
 
-interface IServer {
+export interface IServer {
   CPU: number;
   RAM: number;
   HDD: number;
-  result: number;
 }
 
-interface IVirtualMachines {
-  CPU: number;
-  RAM: string;
-  HDD: number;
-}
+export type IVirtualMachine = IServer;
 
-type MachineList = [IVirtualMachines]
 
