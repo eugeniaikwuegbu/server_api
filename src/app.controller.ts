@@ -1,5 +1,6 @@
 import { Body, Controller, Post } from '@nestjs/common';
-import { AppService, IServer, IVirtualMachine } from './app.service';
+import { AppService} from './app.service';
+import { IServer, IVirtualMachine } from './app.dto';
 
 @Controller('calculate/')
 export class AppController {
