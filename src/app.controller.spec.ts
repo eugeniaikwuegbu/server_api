@@ -15,13 +15,11 @@ describe('AppController', () => {
   });
 
   describe('root', () => {
-    it('should details of Virtual Machines', () => {
-      expect(appController.getVMDetails()).toBe({
-        "message": "Number of Virtual Machines the User can use",
-        "data": {
-          "number_of_vms": 2
-        }
-      });
+    it('should return details of Virtual Machines', () => {
+      expect(appController.getVMDetails(
+        {CPU: 2, RAM: 32, HDD: 100},
+        [{CPU: 1, RAM: 16, HDD: 10}, {CPU: 1, RAM: 16, HDD: 10}, {CPU: 2, RAM: 32, HDD: 100}]
+      )).toBe(2);
     });
   });
 });
