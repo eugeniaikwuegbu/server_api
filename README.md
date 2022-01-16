@@ -48,7 +48,7 @@ $ npm run start:prod
 ## Docker
 ```
 # To build the docker image, run the command:
-$ docker build -t server-planner
+$ docker build -t server-planner .
 
 # To run the image, run the command:
 $ docker run -p 8000:8000 server-planner
