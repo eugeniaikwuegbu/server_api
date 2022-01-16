@@ -45,6 +45,15 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+## Docker
+```
+# To build the docker image, run the command:
+$ docker build -t server-planner
+
+# To run the image, run the command:
+$ docker run -p 8000:8000 server-planner
+```
+
 ## Postman Documentation
 https://documenter.getpostman.com/view/15851817/UVXjLcBq
 
@@ -52,7 +61,7 @@ https://documenter.getpostman.com/view/15851817/UVXjLcBq
 https://6f403305-c7ad-4e0c-b7ae-b42a9f3b09e0.mock.pstmn.io
 
 ## Hosted API Link
-https://server-planner-service.herokuapp.com/
+
 
 ## Test
 
