@@ -61,7 +61,8 @@ https://documenter.getpostman.com/view/15851817/UVXjLcBq
 https://6f403305-c7ad-4e0c-b7ae-b42a9f3b09e0.mock.pstmn.io
 
 ## Hosted API Link
-
+#POST REQUEST
+http://159.223.107.191:8000/calculate
 
 ## Test
 
