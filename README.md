@@ -63,6 +63,34 @@ https://6f403305-c7ad-4e0c-b7ae-b42a9f3b09e0.mock.pstmn.io
 ## Hosted API Link (POST REQUEST)
 http://159.223.107.191:8000/calculate
 
+## Sample Request Body
+```json
+{
+    "serverType": {
+        "CPU": 2,
+        "RAM": 32,
+        "HDD": 100
+    },
+    "vms": [
+        {
+            "CPU": 1,
+            "RAM": 16,
+            "HDD": 10
+        },
+        {
+            "CPU": 1,
+            "RAM": 16,
+            "HDD": 10
+        },
+        {
+            "CPU": 2,
+            "RAM": 32,
+            "HDD": 100
+        }
+    ]
+}
+```
+
 ## Test
 
 ```bash
